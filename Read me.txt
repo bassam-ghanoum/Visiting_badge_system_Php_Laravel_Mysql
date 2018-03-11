@@ -1,0 +1,76 @@
+LAMP Project – Visiting badge system
+/By Bassam Ghanoum
+
+The project excused by using Laravel The PHP Framework For Web Artisans on Mysql Database.
+PHP 7.2.1
+https://www.laravel.com/
+
+You can find:
+- Database Design in project2db_Design.png image File.
+- Database Structure explain in project2db_Structure.pdf File
+- Database Structure in project2db.sql File
+- The hole project's files and folders in the project2 folder in RESTful Form.
+
+The project consist of:
+
+1- Admins:
+The admin has username/Email and password.
+Every admin can:
+	- Log in/Log out To the system.
+	- View/add/update/delet Employee.
+	- View/add/update/delet Visitor.
+	- Check in for the Employee.
+	- Check in for the Visitor.
+	- Check out for the Employee_without admin log in.
+	- Check out for the Visitor_without admin log in.
+	- New Visitor (the Visitor can register himself and print the Visitor cards ) _without admin log in.
+	- See Who is in(All people Visitors and Employees).
+
+2- Employees:
+Every employee has Id, Firstname, Lastname, Mobile, and Photo.
+Every employee has Logs records in in (Logs Table) in_datetime, out_datetime.
+
+Every employee can:
+	- Check in/Check out.
+	- See Who is in(All people Visitors and Employees).
+
+3- Visitors:
+Every visitor has Id, Firstname, Lastname, Errand, Mobile, and Photo.
+Every visitor has Logs records in in (Logs Table) in_datetime, out_datetime.
+
+Every visitor/Every one can:
+	- See Who is in(All people Visitors and Employees).
+
+------------------------------------------------------------------
+Map Help:
+
+Home:
+	- Visitors-> Only for admins allows to View/add/update/delete/check out/print card for a visitor.
+	  The list can be sorted on (Id, Firstname, Lastname, Errand, Mobile ).
+	  Visitors's photos will be copied to visitor_uploads folder in the public folder temporarily.
+	  We can add the photo from file or we can take a photo form the laptop/web cam.
+	  after adding a new visitor,or any time the admin can print a visiting card with photo.
+
+	- Employees-> Only for admins allows to View/add/update/delete an employee.
+	  The list can be sorted on (Id, Firstname, Lastname, Mobile ).
+	  Employees's photos will be copied to emp_uploads folder in the public folder.
+	  We can add the photo from file or we can take a photo form the laptop/web cam.
+	  help with lib (Capture Web camera image using WebcamJS and PHP - Theonlytutorials.com) with my update to delete the images after the visito or the admin choose the one he wanted.
+
+	- Employee's Check In-> alow the emploee to Check in it need employee's number,Firstname,Lastname.
+	  Employee can chick in once per day.
+
+	- Employee's Check Out-> alow the emploee to Check out it need employee's number,Firstname,Lastname.
+	
+	- New Visitor -> the Visitor can register himself and print the Visitor cards with photo.
+	
+	- Who is in?-> give a table of all the people that are inside the buildin both employees and visitors, and it is avaliable for everyone to be easy-access because it will be used in an emergency sitiuation.
+
+	- login-> Admin Login page.
+	- register-> Admin Login page.// I stoped create new admins, we have only one admin.
+	  E-Mail Address: admin@localhost.com, password 111111.
+	- login-> Admin Logout page.	
+    
+    
+
+//@0655e2934313299e49d811922c08ff44
